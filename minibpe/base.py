@@ -23,3 +23,5 @@ def merge(ids, pair, idx):
     Example: ids=[1, 2, 3, 1, 2], pair=(1, 2), idx=4 -> [4, 3, 4]
     """
     newids = []
+    i = 0
+    
