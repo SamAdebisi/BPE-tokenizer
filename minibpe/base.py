@@ -64,5 +64,5 @@ class Tokenizer:
         vocab = {idx: bytes([idx]) for idx in range(256)}
         for (p0, p1), idx in self.merges.items():
             vocab[idx] = vocab[p0] + vocab[p1]
-        for 
+
          return vocab 
