@@ -68,4 +68,4 @@ class Tokenizer:
             vocab[idx] = special.encode("utf-8")
         return vocab 
     
-    
+    def save(self, file_prefix): 
