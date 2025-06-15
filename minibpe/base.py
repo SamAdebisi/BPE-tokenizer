@@ -38,4 +38,7 @@ def merge(ids, pair, idx):
 # the base Tokenizer class 
 
 class Tokenizer:
-    """Base class for tokenizers"""
+    """Base class for tokenizers""" 
+    
+    def __init__(self):
+        self.merges = {}  # (int, int) -> int 
