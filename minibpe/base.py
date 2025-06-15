@@ -6,9 +6,7 @@ import unicodedata
 
 
 def get_stats(ids, counts=None):
-    """_summary_
-
-    Args:
-        ids (_type_): _description_
-        counts (_type_, optional): _description_. Defaults to None.
+    """Given a list of integers, return a dictionary of counts of consecutive pairs
+    Example: [1, 2, 3, 1, 2] -> {(1, 2): 2, (2, 3): 1, (3, 1): 1}
+    Optionally allows to update an existing dictionary of counts
     """
