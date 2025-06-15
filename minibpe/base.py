@@ -25,4 +25,5 @@ def merge(ids, pair, idx):
     newids = []
     i = 0
     while i < len(ids):
-        
+         # if not at the very last position AND the pair matches, replace it
+         
