@@ -60,4 +60,4 @@ class Tokenizer:
         raise NotImplementedError 
     
     def _build_vocab(self):
-         # vocab is simply and deterministically derived from merges
+         # vocab is simply and deterministically derived from merges 
