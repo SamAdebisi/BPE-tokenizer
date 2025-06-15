@@ -28,4 +28,8 @@ def merge(ids, pair, idx):
          # if not at the very last position AND the pair matches, replace it
          if ids[i] == pair[0] and i < len(ids) - 1 and ids[i + 1] == pair[1]:
              newids.append(idx)
-             i +=
+             i += 2
+         else:
+             newids.append(ids[i])
+             i += 1
+    return newids
