@@ -1,4 +1,4 @@
-    """
+"""
     Minimal (byte-level) Byte Pair Encoding tokenizer.
     
     Algorithmically follows along the GPT tokenizer:
@@ -8,3 +8,4 @@ But:
 - Does not handle the regular expression splitting pattern.
 - Does not handle any special tokens.
     """
+    
