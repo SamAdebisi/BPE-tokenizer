@@ -8,4 +8,4 @@ But:
 - Does not handle the regular expression splitting pattern.
 - Does not handle any special tokens.
 """
-    
+
