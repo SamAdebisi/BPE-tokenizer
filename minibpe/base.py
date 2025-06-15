@@ -66,5 +66,4 @@ class Tokenizer:
             vocab[idx] = vocab[p0] + vocab[p1]
         for special, idx in self.special_tokens.items():
             vocab[idx] = special.encode("utf-8")
-
         return vocab 
