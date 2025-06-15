@@ -55,4 +55,5 @@ class Tokenizer:
         # Tokenizer can encode a string into a list of integers 
         raise NotImplementedError 
     
-    
+    def decode(self, ids):
+        # Tokenizer can decode a list of integers into a string
