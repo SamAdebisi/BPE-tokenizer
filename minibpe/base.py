@@ -16,4 +16,4 @@ def get_stats(ids, counts=None):
     return counts
 
 
-def merge()
+def merge(ids, pair, idx):
