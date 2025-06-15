@@ -21,3 +21,5 @@ class BasicsicTokenizer(Tokenizer):
         super().__init__() 
         
     def train(self, text, vocab_size, verbose=False):
+        assert vocab_size >= 256 
+        
