@@ -37,3 +37,4 @@ def merge(ids, pair, idx):
 
 # the base Tokenizer class 
 
+class Tokenizer:
