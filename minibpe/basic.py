@@ -12,7 +12,7 @@ But:
 from .base import get_stats, merge, Tokenizer 
 
 
-class BasicsicTokenizer:
+class BasicsicTokenizer(Tokenizer):
     """
     A basic Byte Pair Encoding tokenizer.
     """
