@@ -51,4 +51,4 @@ class Tokenizer:
         # Tokenizer can train a vocabulary of size vocab_size from text 
         raise NotImplementedError 
     
-    def encode()
+    def encode(self, text):
