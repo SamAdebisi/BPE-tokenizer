@@ -25,3 +25,4 @@ def merge(ids, pair, idx):
     newids = []
     i = 0
     while i < len(ids):
+        
