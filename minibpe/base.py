@@ -14,3 +14,6 @@ def get_stats(ids, counts=None):
     for pair in zip(ids, ids[1:]):
         counts[pair] = counts.get(pair, 0) + 1
     return counts
+
+
+def merge()
