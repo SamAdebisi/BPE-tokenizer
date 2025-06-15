@@ -10,3 +10,4 @@ def get_stats(ids, counts=None):
     Example: [1, 2, 3, 1, 2] -> {(1, 2): 2, (2, 3): 1, (3, 1): 1}
     Optionally allows to update an existing dictionary of counts
     """
+    counts = {} if counts is None else counts
