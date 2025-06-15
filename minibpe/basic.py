@@ -16,4 +16,7 @@ class BasicsicTokenizer(Tokenizer):
     """
     A basic Byte Pair Encoding tokenizer.
     """
-
+    
+    def __init__(self):
+        super().__init__() 
+        
