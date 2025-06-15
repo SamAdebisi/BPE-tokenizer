@@ -48,4 +48,5 @@ class Tokenizer:
         self.vocab = self._build_vocab() # int -> bytes 
         
     def train(self, text, vocab_size, verbose=False):
-        # Tokenizer can train a vocabulary of size vocab_size from text
+        # Tokenizer can train a vocabulary of size vocab_size from text 
+        raise NotImplementedError 
