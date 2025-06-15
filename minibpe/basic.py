@@ -20,3 +20,4 @@ class BasicsicTokenizer(Tokenizer):
     def __init__(self):
         super().__init__() 
         
+    def train(self, text, vocab_size, verbose=False):
