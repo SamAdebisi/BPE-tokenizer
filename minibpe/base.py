@@ -18,5 +18,7 @@ def get_stats(ids, counts=None):
 
 def merge(ids, pair, idx):
     """
-    
+    In the list of integers (ids), replace all consecutive occurrences
+    of pair with the new integer token idx
+    Example: ids=[1, 2, 3, 1, 2], pair=(1, 2), idx=4 -> [4, 3, 4]
     """
