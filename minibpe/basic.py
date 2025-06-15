@@ -9,7 +9,7 @@ But:
 - Does not handle any special tokens.
 """
 
-from .base import get_stats, merge 
+from .base import get_stats, merge, Tokenizer 
 
 
 class BasicsicTokenizer:
@@ -77,4 +77,3 @@ class BasicsicTokenizer:
 
         return ids
 
-    def decode(

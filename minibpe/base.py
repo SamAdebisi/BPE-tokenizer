@@ -70,6 +70,5 @@ class Tokenizer:
     
     def save(self, file_prefix): 
         """
-
        
         """
