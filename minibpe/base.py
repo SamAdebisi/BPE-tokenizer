@@ -33,3 +33,7 @@ def merge(ids, pair, idx):
              newids.append(ids[i])
              i += 1
     return newids
+
+
+# the base Tokenizer class 
+
