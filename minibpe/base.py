@@ -61,3 +61,4 @@ class Tokenizer:
     
     def _build_vocab(self):
          # vocab is simply and deterministically derived from merges 
+         vocab = {idx: bytes([idx]) for idx in range(256)}
