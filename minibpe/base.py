@@ -53,3 +53,4 @@ class Tokenizer:
     
     def encode(self, text):
         # Tokenizer can encode a string into a list of integers 
+        raise NotImplementedError 
