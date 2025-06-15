@@ -23,3 +23,4 @@ class BasicsicTokenizer(Tokenizer):
     def train(self, text, vocab_size, verbose=False):
         assert vocab_size >= 256 
         num_merges = vocab_size - 256 
+        
