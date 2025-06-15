@@ -45,4 +45,4 @@ class Tokenizer:
         self.merges = {}  # (int, int) -> int 
         self.pattern = "" # str 
         self.special_tokens = {} # str -> int, e.g. {'<|endoftext|>': 100257} 
-        self.vocab_size = self._build_vocab()
+        self.vocab = self._build_vocab() 
