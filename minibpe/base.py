@@ -17,3 +17,10 @@ def get_stats(ids, counts=None):
 
 
 def merge(ids, pair, idx):
+    """
+
+    Args:
+        ids (_type_): _description_
+        pair (_type_): _description_
+        idx (_type_): _description_
+    """
