@@ -86,4 +86,5 @@ class Tokenizer:
 def replace_control_characters(s: str) -> str:
     pass 
 
-def 
+def render_token(t: bytes) -> str:
+    pass
