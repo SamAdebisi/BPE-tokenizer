@@ -24,3 +24,4 @@ class BasicsicTokenizer(Tokenizer):
         assert vocab_size >= 256 
         num_merges = vocab_size - 256 
         
+        
