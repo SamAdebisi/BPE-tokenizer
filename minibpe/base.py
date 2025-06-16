@@ -72,5 +72,11 @@ class Tokenizer:
         """
        
         """
+        pass
+    
+    def load(self, file_prefix):
+        """
+        
+        """
         pass 
     
