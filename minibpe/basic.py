@@ -63,3 +63,4 @@ class BasicsicTokenizer(Tokenizer):
             # subtle: if there are no more merges available, the key will result 
             # in an inf for every single pair, and the min will be 
             # just the first pair in the list, arbitrarily we can 
+            # detect this terminating case by a membership check 
