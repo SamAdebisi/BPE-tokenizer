@@ -56,3 +56,4 @@ class BasicsicTokenizer(Tokenizer):
         # given a string text, return the token ids 
         text_bytes = text.encode("utf-8") # raw bytes 
         ids = list(text_bytes) # list of integers in range 0...255 
+        while len(ids) >= 2:
