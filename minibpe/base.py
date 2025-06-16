@@ -80,3 +80,5 @@ class Tokenizer:
         """
         pass 
     
+
+# Two helper functions 
