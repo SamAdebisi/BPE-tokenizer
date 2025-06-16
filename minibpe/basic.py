@@ -31,3 +31,4 @@ class BasicsicTokenizer(Tokenizer):
         # iteratively merge the most common pairs to create new tokens 
         merges = {} # (int, int) -> int 
         for i in range(num_merges):
+            stats = get_stats(ids) 
