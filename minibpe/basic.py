@@ -37,3 +37,4 @@ class BasicsicTokenizer(Tokenizer):
             stats = get_stats(ids) 
             # find the pair with the highest count 
             pair = max(stats, key=stats.get)
+            
