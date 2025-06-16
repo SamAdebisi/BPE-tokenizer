@@ -47,3 +47,5 @@ class BasicsicTokenizer(Tokenizer):
             # print 
             if verbose:
                 print(f"merge {i+1}/{num_merges}: {pair} -> {idx} ({vocab[idx]}) had {stats[pair]} occurrences")
+                
+            
