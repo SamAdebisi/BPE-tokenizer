@@ -35,3 +35,4 @@ class BasicsicTokenizer(Tokenizer):
         for i in range(num_merges):
             # count up the number of times every consecutive pair appears 
             stats = get_stats(ids) 
+            # find the pair with the highest count 
