@@ -50,6 +50,6 @@ class BasicsicTokenizer(Tokenizer):
                 
             # save class variables 
             self.merges = merges # used in encode()
-            self.vocab = vocab 
+            self.vocab = vocab   # used in decode()
             
         
