@@ -43,4 +43,5 @@ class BasicsicTokenizer(Tokenizer):
             ids = merge(ids, pair, idx)
             # save the merge 
             merges[pair] = idx 
-            # update the vocab
+            vocab[idx] = vocab[pair[0]] + vocab[pair[1]]
+            # update the vocab 
