@@ -61,3 +61,5 @@ class BasicsicTokenizer(Tokenizer):
             stats = get_stats(ids)
             pair = min(stats, key=lambda p: self.merges.get(p, float('inf')))
             # subtle: if there are no more merges available, the key will result 
+            # in an inf for every single pair, and the min will be 
+            
