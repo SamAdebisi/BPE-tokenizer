@@ -66,3 +66,4 @@ class BasicsicTokenizer(Tokenizer):
             # detect this terminating case by a membership check 
             if pair not in self.merges:
                 break # nothing else can be merged anymore 
+            
