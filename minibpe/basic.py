@@ -71,3 +71,6 @@ class BasicsicTokenizer(Tokenizer):
             ids = merge(ids, pair, idx)
         return ids 
     
+    def decode(self, ids):
+        
+        return 
