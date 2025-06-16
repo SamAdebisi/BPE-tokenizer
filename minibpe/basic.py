@@ -29,3 +29,5 @@ class BasicsicTokenizer(Tokenizer):
         ids = list(text_bytes) # list of integers in range 0...255 
         
         # iteratively merge the most common pairs to create new tokens 
+        merges = {}
+        for i in range(num_merges):
