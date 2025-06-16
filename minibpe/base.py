@@ -82,3 +82,6 @@ class Tokenizer:
     
 
 # Two helper functions 
+
+def replace_control_characters(s: str) -> str:
+    
