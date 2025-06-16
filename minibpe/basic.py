@@ -52,3 +52,5 @@ class BasicsicTokenizer(Tokenizer):
         self.merges = merges # used in encode()
         self.vocab = vocab   # used in decode()
         
+    def encode(self, text):
+        text_bytes = text.encode("utf-8")
