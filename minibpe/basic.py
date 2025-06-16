@@ -41,3 +41,5 @@ class BasicsicTokenizer(Tokenizer):
             idx = 256 + i 
             # replace all occurrences of pair in ids with idx 
             ids = merge(ids, pair, idx)
+            # save the merge 
+            
