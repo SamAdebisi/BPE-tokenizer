@@ -53,4 +53,5 @@ class BasicsicTokenizer(Tokenizer):
         self.vocab = vocab   # used in decode()
         
     def encode(self, text):
-        text_bytes = text.encode("utf-8")
+        text_bytes = text.encode("utf-8") # raw bytes 
+        ids = list(text_bytes) # list of integers in range 0...255
