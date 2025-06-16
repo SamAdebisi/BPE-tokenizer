@@ -46,4 +46,4 @@ class BasicsicTokenizer(Tokenizer):
             vocab[idx] = vocab[pair[0]] + vocab[pair[1]]
             # print 
             if verbose:
-                
+                print(f"merge {i+1}/{num_merges}: {pair} -> {idx} ")
