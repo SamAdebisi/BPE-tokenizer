@@ -72,5 +72,7 @@ class BasicsicTokenizer(Tokenizer):
         return ids 
     
     def decode(self, ids):
-        
-        return 
+        text_bytes = b"".join([self.vocab[idx] for idx in ids])
+        return text_bytes.decode("utf-8", errors="replace")
+    
+   
