@@ -25,4 +25,4 @@ class BasicsicTokenizer(Tokenizer):
         num_merges = vocab_size - 256 
         
         # input text preprocessing 
-        text_bytes = text.encode("utf-8")
+        text_bytes = text.encode("utf-8") # raw bytes 
