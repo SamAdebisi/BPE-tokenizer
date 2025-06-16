@@ -44,3 +44,4 @@ class BasicsicTokenizer(Tokenizer):
             # save the merge 
             merges[pair] = idx 
             vocab[idx] = vocab[pair[0]] + vocab[pair[1]]
+            
