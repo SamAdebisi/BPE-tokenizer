@@ -58,4 +58,5 @@ class BasicsicTokenizer(Tokenizer):
         ids = list(text_bytes) # list of integers in range 0...255 
         while len(ids) >= 2:
             # find the pair with the lowest merge index 
-            
+            stats = get_stats(ids)
+            pair = min(stats, key=lambda p: self.merges.get(p, float('inf')))
