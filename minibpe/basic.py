@@ -36,3 +36,4 @@ class BasicsicTokenizer(Tokenizer):
             # count up the number of times every consecutive pair appears 
             stats = get_stats(ids) 
             # find the pair with the highest count 
+            pair = max(stats, key=stats.get)
