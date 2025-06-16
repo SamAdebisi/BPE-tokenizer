@@ -74,6 +74,4 @@ class BasicsicTokenizer(Tokenizer):
     def decode(self, ids):
         text_bytes = b"".join(self.vocab[idx] for idx in ids)
         text = text_bytes.decode("utf-8", errors="replace")
-        
-    
-   
+        return text 
