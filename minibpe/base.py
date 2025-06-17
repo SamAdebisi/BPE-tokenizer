@@ -101,7 +101,7 @@ class Tokenizer:
                 # because decoding in this way is a lossy operation! 
                 s = render_token(token)
                 # find the children of this token, if any 
-                if idx in inverted_merges:
+                if idx in inverted_merges: 
                 
                 
             
