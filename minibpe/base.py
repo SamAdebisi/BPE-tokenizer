@@ -107,6 +107,7 @@ class Tokenizer:
                     s0 = render_token(self.vocab[idx0])
                     s1 = render_token(self.vocab[idx1])
                     f.write(f"[{s0}] [{s1}] -> [{s}] {idx}\n")
+                else: 
                     
                     
                 
