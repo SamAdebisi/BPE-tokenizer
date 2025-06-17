@@ -78,7 +78,7 @@ class Tokenizer:
         # write the model: to be used in load() later 
         model_file = file_prefix + ".model" 
         with open(model_file, "w") as f:
-            # write the version, 
+            # write the version, pattern and merges, 
             f.write("version: 1\n")
 
         pass
