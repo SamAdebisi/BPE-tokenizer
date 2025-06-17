@@ -70,7 +70,7 @@ class Tokenizer:
     
     def save(self, file_prefix): 
         """
-       
+       Saves two files: 
         """
         pass
     
