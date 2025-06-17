@@ -134,10 +134,12 @@ class Tokenizer:
                     f.write(f"[{s}] {idx}\n")                         
                                
     
-    def load(self, file_prefix):
+    def load(self, model_file):
         """
         Inverse of save() but only for the model file. 
         """
+        assert model_file.endswith(".model")
+        
         
         pass 
     
