@@ -159,7 +159,10 @@ class Tokenizer:
                 idx1, idx2 = map(int, line.split())
                 merges[(idx1, idx2)] = idx
                 idx += 1 
-        
+        self.merges = merges 
+        self.special_tokens = special_tokens 
+        self.vocab = self._build_vocab() 
+
         pass 
     
 
