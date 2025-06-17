@@ -147,7 +147,8 @@ class Tokenizer:
             # read the version 
             version = f.readline().strip()
             assert version == "minibpe 1"
-
+            # read the pattern 
+            self.pattern = f.readline().strip
         
         pass 
     
