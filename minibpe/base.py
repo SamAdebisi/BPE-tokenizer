@@ -156,6 +156,7 @@ class Tokenizer:
                 special_tokens[special] = int(special_idx)
             # read the merges 
             
+            
         
         pass 
     
