@@ -46,7 +46,7 @@ def replace_control_characters(s: str) -> str:
         if unicodedata.category(ch)[0] != "C":
             chars.append(ch) # this character is ok 
         else:
-            chars.append(f"")
+            chars.append(f"\\u{ord(ch):04x}")
     return "".join(chars)
 
     pass 
