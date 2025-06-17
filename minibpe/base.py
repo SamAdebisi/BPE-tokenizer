@@ -55,7 +55,6 @@ def render_token(t: bytes) -> str:
     s = replace_control_characters(s)
     return s 
 
-    pass 
 
 # the base Tokenizer class 
 
