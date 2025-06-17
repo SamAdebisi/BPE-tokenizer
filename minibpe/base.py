@@ -142,6 +142,7 @@ class Tokenizer:
         # read the model file 
         merges = {} # (int, int) -> int 
         special_tokens = {} # str -> int 
+        idx = 256 
         
         pass 
     
