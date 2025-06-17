@@ -88,7 +88,7 @@ class Tokenizer:
             # the merges dict 
             for idx1, idx2 in self.merges:
                 f.write(f"{idx1} {idx2}\n") 
-            
+        # write the vocab: for the human to look at 
             
 
 
