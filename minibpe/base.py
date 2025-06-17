@@ -140,7 +140,8 @@ class Tokenizer:
         """
         assert model_file.endswith(".model")
         # read the model file 
-        
+        merges = {} # (int, int) -> int 
+        special_tokens = {} # str -> int 
         
         pass 
     
