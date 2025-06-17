@@ -76,6 +76,10 @@ class Tokenizer:
        - vocab file is just a pretty printed version for human inspection only 
         """ 
         # write the model: to be used in load() later 
+        model_file = file_prefix + ".model"
+        with open(model_file, "w") as f:
+            f.write("version: 1\n")
+
         pass
     
     def load(self, file_prefix):
