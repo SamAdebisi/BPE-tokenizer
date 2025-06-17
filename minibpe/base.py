@@ -38,7 +38,7 @@ def merge(ids, pair, idx):
 # first two helper functions... 
 def replace_control_characters(s: str) -> str:
     # we don't want to print control characters 
-    
+    # which distort the output (e.g. \n or much worse)
     pass 
 
 def render_token(t: bytes) -> str:
