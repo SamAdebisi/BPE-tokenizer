@@ -151,7 +151,9 @@ class Tokenizer:
             self.pattern = f.readline().strip()
             # read the special tokens 
             num_special = int(f.readline().strip())
-            for _ in range(num)
+            for _ in range(num_special):
+                special, idx = f.readline().strip().split()
+                special_tokens[special] = int(idx)
         
         pass 
     
