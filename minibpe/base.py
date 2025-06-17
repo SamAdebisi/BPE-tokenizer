@@ -106,7 +106,7 @@ class Tokenizer:
                     idx0, idx1 = inverted_merges[idx] 
                     s0 = render_token(self.vocab[idx0])
                     s1 = render_token(self.vocab[idx1])
-                    f.write(f"[{s0}] [{s1}] ->")
+                    f.write(f"[{s0}] [{s1}] -> [{s}] {idx}")
                     
                     
                 
