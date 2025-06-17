@@ -159,6 +159,7 @@ class Tokenizer:
                 idx1, idx2 = map(int, line.split())
                 merges[(idx1, idx2)] = idx
                 idx += 1 
+        
             
         
         pass 
