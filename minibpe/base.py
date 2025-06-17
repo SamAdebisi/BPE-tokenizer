@@ -104,6 +104,9 @@ class Tokenizer:
                 if idx in inverted_merges: 
                     # if this token has children, render it nicely as a merge 
                     idx0, idx1 = inverted_merges[idx] 
+                    s0 = render_token(self.vocab[idx0])
+                    s1 = render_token(self.vocab[idx1])
+                    
                     
                 
                 
