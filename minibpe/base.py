@@ -152,8 +152,8 @@ class Tokenizer:
             # read the special tokens 
             num_special = int(f.readline().strip())
             for _ in range(num_special):
-                special, idx = f.readline().strip().split()
-                special_tokens[special] = int(idx)
+                special, special_idx = f.readline().strip().split()
+                special_tokens[special] = int(special_idx)
         
         pass 
     
