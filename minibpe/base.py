@@ -155,6 +155,7 @@ class Tokenizer:
                 special, special_idx = f.readline().strip().split()
                 special_tokens[special] = int(special_idx)
             # read the merges 
+            
         
         pass 
     
