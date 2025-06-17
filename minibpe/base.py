@@ -86,6 +86,9 @@ class Tokenizer:
             for special, idx in self.special_tokens.items():
                 f.write(f"{special} {idx}\n") 
             # the merges dict 
+            for idx1, idx2 in self.merges:
+                f.write(f"{idx1} {idx2}\n") 
+            
             
 
 
