@@ -115,7 +115,7 @@ class Tokenizer:
     
     def load(self, file_prefix):
         """
-        
+        Inverse of save() but only for the model file. 
         """
         pass 
     
