@@ -102,6 +102,9 @@ class Tokenizer:
                 s = render_token(token)
                 # find the children of this token, if any 
                 if idx in inverted_merges: 
+                    # if this token has children, render it nicely as a merge 
+                    idx0, idx1 = inverted_merges[idx]
+                    
                 
                 
             
