@@ -82,6 +82,9 @@ class Tokenizer:
             f.write("minibpe 1\n") 
             f.write(self.pattern + "\n") 
             # write the special tokens, first the number of them, then each one 
+            f.write(f"{len(self.special_tokens)}\n")
+            for special, idx in self.special_tokens.items():
+                f.write(f"{special} {idx}\n") 
             
 
 
