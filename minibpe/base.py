@@ -44,7 +44,7 @@ def replace_control_characters(s: str) -> str:
     chars = []
     for ch in s:
         if unicodedata.category(ch)[0] != "C":
-            chars.append(ch)
+            chars.append(ch) # this character is ok 
     return "".join(chars)
 
     pass 
