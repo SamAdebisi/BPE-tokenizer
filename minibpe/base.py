@@ -36,6 +36,11 @@ def merge(ids, pair, idx):
 
 
 # first two helper functions... 
+def replace_control_characters(s: str) -> str:
+    pass 
+
+def render_token(t: bytes) -> str:
+    pass
 
 # the base Tokenizer class 
 
