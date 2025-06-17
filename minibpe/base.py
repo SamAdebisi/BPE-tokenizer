@@ -49,8 +49,6 @@ def replace_control_characters(s: str) -> str:
             chars.append(f"\\u{ord(ch):04x}") # escape 
     return "".join(chars)
 
-    pass 
-
 def render_token(t: bytes) -> str:
     # pretty print a token, escaping control characters 
     s = t.decode("utf-8", errors="replace")
