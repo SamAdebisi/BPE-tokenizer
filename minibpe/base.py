@@ -144,7 +144,7 @@ class Tokenizer:
         special_tokens = {} # str -> int 
         idx = 256 
         with open(model_file, "r", encoding="utf-8") as f:
-            
+            # read the version 
         
         pass 
     
