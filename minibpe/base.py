@@ -108,6 +108,7 @@ class Tokenizer:
                     s1 = render_token(self.vocab[idx1])
                     f.write(f"[{s0}] [{s1}] -> [{s}] {idx}\n")
                 else: 
+                    # otherwise this is leaf token, just print it 
                     
                     
                 
