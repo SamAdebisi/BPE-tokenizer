@@ -94,6 +94,7 @@ class Tokenizer:
         with open(vocab_file, "w", encoding="utf-8") as f:
             for idx, token in self.vocab.items():
                 # note: many tokens may be partial utf-8 sequences 
+                # and cannot be decoded into valid strings. 
                 
             
 
