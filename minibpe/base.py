@@ -71,7 +71,7 @@ class Tokenizer:
     def save(self, file_prefix): 
         """
        Saves two files: file_prefix.vocab and file_prefix.model 
-       This is inspired (but not equivalent to!)
+       This is inspired (but not equivalent to!) sentencepiece's model saving:  
         """
         pass
     
