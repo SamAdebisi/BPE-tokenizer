@@ -95,7 +95,7 @@ class Tokenizer:
             for idx, token in self.vocab.items():
                 # note: many tokens may be partial utf-8 sequences 
                 # and cannot be decoded into valid strings. 
-                # Here we're using (errors = 'replace')
+                # Here we're using (errors = 'replace') 
                 
             
 
