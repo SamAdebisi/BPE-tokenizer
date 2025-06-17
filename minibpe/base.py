@@ -75,6 +75,7 @@ class Tokenizer:
        - model file is the critical one, intended for load() 
        - vocab file is just a pretty printed version for human inspection only 
         """ 
+        # write the model: to be used in load() later 
         pass
     
     def load(self, file_prefix):
