@@ -156,6 +156,9 @@ class Tokenizer:
                 special_tokens[special] = int(special_idx)
             # read the merges 
             for line in f:
+                idx1, idx2 = map(int, line.split())
+                merges[(idx1, idx2)] = idx
+                idx += 1 
             
         
         pass 
