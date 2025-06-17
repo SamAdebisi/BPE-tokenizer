@@ -81,7 +81,8 @@ class Tokenizer:
             # write the version, pattern and merges, that's all that's needed 
             f.write("minibpe 1\n") 
             f.write(self.pattern + "\n") 
-            # write the special tokens, first the number 
+            # write the special tokens, first the number of them, then each one 
+            
 
 
         pass
