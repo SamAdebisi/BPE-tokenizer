@@ -99,6 +99,8 @@ class Tokenizer:
                 # to replace them with the replacement char �. 
                 # this also means that we couldn't possibly use .vocab in load() 
                 # because decoding in this way is a lossy operation! 
+                s = render_token(token)
+                
                 
             
 
