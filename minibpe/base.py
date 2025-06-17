@@ -80,6 +80,8 @@ class Tokenizer:
         with open(model_file, "w") as f:
             # write the version, pattern and merges, that's all that's needed 
             f.write("minibpe 1\n") 
+            f.write(self.pattern + "\n")
+
 
         pass
     
