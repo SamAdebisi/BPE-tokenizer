@@ -90,6 +90,7 @@ class Tokenizer:
                 f.write(f"{idx1} {idx2}\n") 
         # write the vocab: for the human to look at 
         vocab_file = file_prefix + ".vocab" 
+        inverted_merges = {idx: pair for pair, idx in self.merges.items()}
         with open(vocab_file, "w") as f:
             for idx, token in self.vocab.items():
                 f.write(f"{idx} {token.decode('utf-8')}\n") 
