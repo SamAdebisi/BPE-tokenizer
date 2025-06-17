@@ -113,8 +113,7 @@ class Tokenizer:
                     f.write(f"[{s}] {idx}\n") 
                     
                     
-                    
-                
+                               
                 
             
     
