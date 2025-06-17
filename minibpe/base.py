@@ -72,6 +72,7 @@ class Tokenizer:
         """
        Saves two files: file_prefix.vocab and file_prefix.model 
        This is inspired (but not equivalent to!) sentencepiece's model saving:  
+       - model 
         """
         pass
     
