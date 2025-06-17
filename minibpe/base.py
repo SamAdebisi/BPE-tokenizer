@@ -42,6 +42,11 @@ def replace_control_characters(s: str) -> str:
     # https://stackoverflow.com/questions/4324790/removing-control-characters-from-a-string-in-python/19016117#19016117
     # http://www.unicode.org/reports/tr44/#GC_Values_Table
     chars = []
+    for ch in s:
+        if unicodedata.category(ch)[0] != "C":
+            chars.append(ch)
+    return "".join(chars)
+
     pass 
 
 def render_token(t: bytes) -> str:
