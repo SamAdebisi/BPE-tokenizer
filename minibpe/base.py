@@ -72,8 +72,9 @@ class Tokenizer:
         """
        Saves two files: file_prefix.vocab and file_prefix.model 
        This is inspired (but not equivalent to!) sentencepiece's model saving:  
-       - model file is the critical one, intended for load()
-        """
+       - model file is the critical one, intended for load() 
+       - vocab file is just a pretty printed version for human inspection only 
+        """ 
         pass
     
     def load(self, file_prefix):
