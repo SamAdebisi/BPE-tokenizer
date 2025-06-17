@@ -40,7 +40,8 @@ def replace_control_characters(s: str) -> str:
     pass 
 
 def render_token(t: bytes) -> str:
-    pass
+    # pretty print a token, escaping control characters 
+    pass 
 
 # the base Tokenizer class 
 
