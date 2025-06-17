@@ -97,6 +97,7 @@ class Tokenizer:
                 # and cannot be decoded into valid strings. 
                 # Here we're using (errors = 'replace') 
                 # to replace them with the replacement char �. 
+                # this also means that we couldn't possibly use .vocab in load() 
                 
             
 
