@@ -96,6 +96,7 @@ class Tokenizer:
                 # note: many tokens may be partial utf-8 sequences 
                 # and cannot be decoded into valid strings. 
                 # Here we're using (errors = 'replace') 
+                # to replace them with the replacement char 
                 
             
 
