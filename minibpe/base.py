@@ -139,7 +139,7 @@ class Tokenizer:
         Inverse of save() but only for the model file. 
         """
         assert model_file.endswith(".model")
-        
+        # read the model file 
         
         pass 
     
