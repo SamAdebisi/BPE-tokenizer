@@ -110,6 +110,8 @@ class Tokenizer:
                 else: 
                     # otherwise this is leaf token, just print it 
                     # (this should just be the first 256 tokens, the bytes) 
+                    f.write(f"{s} {idx}\n") 
+                    
                     
                     
                 
