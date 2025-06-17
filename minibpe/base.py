@@ -109,6 +109,7 @@ class Tokenizer:
                     f.write(f"[{s0}] [{s1}] -> [{s}] {idx}\n")
                 else: 
                     # otherwise this is leaf token, just print it 
+                    # (this should just be the first 256 tokens, the bytes)
                     
                     
                 
