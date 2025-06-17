@@ -148,7 +148,10 @@ class Tokenizer:
             version = f.readline().strip()
             assert version == "minibpe 1"
             # read the pattern 
-            self.pattern = f.readline().strip
+            self.pattern = f.readline().strip()
+            # read the special tokens 
+            num_special = int(f.readline().strip())
+            for _ in range(num)
         
         pass 
     
