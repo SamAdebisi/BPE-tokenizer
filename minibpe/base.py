@@ -145,6 +145,9 @@ class Tokenizer:
         idx = 256 
         with open(model_file, "r", encoding="utf-8") as f:
             # read the version 
+            version = f.readline().strip()
+            assert version == "minibpe 1"
+
         
         pass 
     
