@@ -41,6 +41,7 @@ def replace_control_characters(s: str) -> str:
     # which distort the output (e.g. \n or much worse)
     # https://stackoverflow.com/questions/4324790/removing-control-characters-from-a-string-in-python/19016117#19016117
     # http://www.unicode.org/reports/tr44/#GC_Values_Table
+    chars = []
     pass 
 
 def render_token(t: bytes) -> str:
