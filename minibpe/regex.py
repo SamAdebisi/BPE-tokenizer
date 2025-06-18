@@ -31,3 +31,5 @@ class RegexTokenizer(Tokenizer):
         self.compiled_pattern = re.compile(self.pattern) 
         self.special_tokens = {} # str -> int 
         self.inverse_special_tokens = {} # int -> str 
+        
+        
