@@ -57,4 +57,5 @@ class RegexTokenizer(Tokenizer):
             idx = 256 + i 
             # replace all occurrences of pair in ids with idx 
             ids = [merge(chunk_ids, pair, idx) for chunk_ids in ids] 
-            
+            # save the merge 
+            merges[pair] = idx 
