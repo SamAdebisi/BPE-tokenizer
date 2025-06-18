@@ -32,5 +32,4 @@ class RegexTokenizer(Tokenizer):
         self.special_tokens = {} # str -> int 
         self.inverse_special_tokens = {} # int -> str 
         
-        
-        
+    def train(self, text, vocab_size, verbose=False):
