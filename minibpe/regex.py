@@ -68,5 +68,5 @@ class RegexTokenizer(Tokenizer):
         self.merges = merges # used in encode()
         self.vocab = vocab   # used in decode() 
         
-    def register_special_token(self, special, idx):
+    def register_special_tokens(self, special, idx):
         
