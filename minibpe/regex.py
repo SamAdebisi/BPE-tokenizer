@@ -40,5 +40,5 @@ class RegexTokenizer(Tokenizer):
         text_chunks = re.findall(self.compiled_pattern, text) 
         
         # input text preprocessing 
-        
+        ids = [list(ch.encode("utf-8")) for ch in text_chunks] 
         
