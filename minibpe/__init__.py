@@ -1,2 +1,2 @@
 from .base import Tokenizer
-from .basic import 
+from .basic import BasicsicTokenizer 
