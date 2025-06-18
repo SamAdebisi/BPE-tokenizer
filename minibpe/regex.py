@@ -67,3 +67,4 @@ class RegexTokenizer(Tokenizer):
         # save class variables 
         self.merges = merges # used in encode()
         self.vocab = vocab   # used in decode() 
+        
