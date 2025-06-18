@@ -21,5 +21,10 @@ GPT4_SPLIT_PATTERN = r"""'(?i:[sdmt]|ll|ve|re)|[^\r\n\p{L}\p{N}]?+\p{L}+|\p{N}{1
 class RegexTokenizer(Tokenizer):
     
     def __init__(self, pattern=None):
+        """
+
+        Args:
+            pattern (_type_, optional): _description_. Defaults to None.
+        """
         super().__init__()
         self.pattern = ""
