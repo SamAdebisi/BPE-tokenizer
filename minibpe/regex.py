@@ -27,4 +27,4 @@ class RegexTokenizer(Tokenizer):
           example: {'<|endoftext|>': 100257}
         """
         super().__init__()
-        self.pattern = GPT4_SPLIT_PATTERN if pattern is None else pattern
+        self.pattern = GPT4_SPLIT_PATTERN if pattern is None else pattern 
