@@ -36,6 +36,6 @@ class RegexTokenizer(Tokenizer):
         assert vocab_size >= 256
         num_merges = vocab_size - 256 
         
-        #
+        # split the text up into text chunks 
         
         # input text preprocessing
