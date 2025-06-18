@@ -37,6 +37,7 @@ class RegexTokenizer(Tokenizer):
         num_merges = vocab_size - 256 
         
         # split the text up into text chunks 
-        text_chunks = 
+        text_chunks = re.findall(self.compiled_pattern, text)
+        
         
         # input text preprocessing
