@@ -59,4 +59,4 @@ class RegexTokenizer(Tokenizer):
             ids = [merge(chunk_ids, pair, idx) for chunk_ids in ids] 
             # save the merge 
             merges[pair] = idx
-            vocab[idx] = vocab[pair[0]] + vocab[pair[1]]
+            vocab[idx] = vocab[pair[0]] + vocab[pair[1]] 
