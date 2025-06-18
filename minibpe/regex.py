@@ -47,4 +47,4 @@ class RegexTokenizer(Tokenizer):
         vocab = {idx: bytes([idx]) for idx in range(256)} # int -> bytes 
         for i in range(num_merges): 
             # count up the number of times every consecutive pair appears 
-            stats = [] 
+            stats = {} 
