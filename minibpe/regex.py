@@ -22,7 +22,6 @@ class RegexTokenizer(Tokenizer):
     
     def __init__(self, pattern=None):
         """
-
         """
         super().__init__()
         self.pattern = ""
