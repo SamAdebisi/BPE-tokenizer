@@ -40,3 +40,5 @@ class RegexTokenizer(Tokenizer):
         text_chunks = re.findall(self.compiled_pattern, text) 
         
         # input text preprocessing 
+        
+        
