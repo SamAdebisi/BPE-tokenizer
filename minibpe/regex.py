@@ -23,8 +23,6 @@ class RegexTokenizer(Tokenizer):
     def __init__(self, pattern=None):
         """
 
-        Args:
-            pattern (_type_, optional): _description_. Defaults to None.
         """
         super().__init__()
         self.pattern = ""
