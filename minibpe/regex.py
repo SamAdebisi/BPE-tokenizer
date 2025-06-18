@@ -39,4 +39,4 @@ class RegexTokenizer(Tokenizer):
         # split the text up into text chunks 
         text_chunks = re.findall(self.compiled_pattern, text) 
         
-        # input text preprocessing
+        # input text preprocessing 
