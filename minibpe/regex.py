@@ -28,4 +28,4 @@ class RegexTokenizer(Tokenizer):
         """
         super().__init__()
         self.pattern = GPT4_SPLIT_PATTERN if pattern is None else pattern 
-        
+        self.compiled_pattern = re.compile(self.pattern) 
