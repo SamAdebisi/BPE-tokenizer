@@ -53,4 +53,4 @@ class RegexTokenizer(Tokenizer):
                 get_stats(chunk_ids, stats) 
             # find the pair with the highest count 
             pair = max(stats, key=stats.get)
-            # mint a new token: assign it the next available id ) 
+            # mint a new token: assign it the next available id 
