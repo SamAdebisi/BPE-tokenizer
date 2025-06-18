@@ -56,4 +56,4 @@ class RegexTokenizer(Tokenizer):
             # mint a new token: assign it the next available id  
             idx = 256 + i 
             # replace all occurrences of pair in ids with idx 
-            ids = []
+            ids = [merge(chunk_ids, pair, idx) for chunk_ids in ids]
