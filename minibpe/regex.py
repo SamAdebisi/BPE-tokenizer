@@ -30,3 +30,4 @@ class RegexTokenizer(Tokenizer):
         self.pattern = GPT4_SPLIT_PATTERN if pattern is None else pattern 
         self.compiled_pattern = re.compile(self.pattern) 
         self.special_tokens = {} # str -> int 
+        self.inverse_special_tokens = {} # int -> str
