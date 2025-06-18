@@ -65,3 +65,5 @@ class RegexTokenizer(Tokenizer):
                 print(f"merge {i+1}/{num_merges}: {pair} -> {idx}) ({vocab[idx]}) had {stats[pair]} occurrences") 
                 
         # save class variables 
+        self.merges = merges # used in encode()
+        self.vocab = vocab   # used in decode()
