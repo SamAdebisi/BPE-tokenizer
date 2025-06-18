@@ -48,3 +48,5 @@ class RegexTokenizer(Tokenizer):
         for i in range(num_merges): 
             # count up the number of times every consecutive pair appears 
             stats = {} 
+            for chunk_ids in ids:
+                stats = get_stats(chunk, stats) 
