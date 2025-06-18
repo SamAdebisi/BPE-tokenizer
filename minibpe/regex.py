@@ -22,6 +22,9 @@ class RegexTokenizer(Tokenizer):
     
     def __init__(self, pattern=None):
         """
+        - pattern: optional string to override the default (GPT-4 split pattern)
+        - special_tokens: str -> int dictionary of special tokens
+          example: {'<|endoftext|>': 100257}
         """
         super().__init__()
         self.pattern = ""
