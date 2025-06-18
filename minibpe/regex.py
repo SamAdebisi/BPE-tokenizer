@@ -49,6 +49,7 @@ class RegexTokenizer(Tokenizer):
             # count up the number of times every consecutive pair appears 
             stats = {} 
             for chunk_ids in ids:
+                # 
                 stats = get_stats(chunk_ids, stats) 
             # find the pair with the highest count 
             pair = max(stats, stats) 
