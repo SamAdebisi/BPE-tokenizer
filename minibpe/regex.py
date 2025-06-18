@@ -33,3 +33,4 @@ class RegexTokenizer(Tokenizer):
         self.inverse_special_tokens = {} # int -> str 
         
     def train(self, text, vocab_size, verbose=False):
+        assert vocab_size >= 256
