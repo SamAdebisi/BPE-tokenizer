@@ -52,4 +52,4 @@ class RegexTokenizer(Tokenizer):
                 # passing in stats will update it in place, adding up counts 
                 get_stats(chunk_ids, stats) 
             # find the pair with the highest count 
-            pair = max(stats, stats) 
+            pair = max(stats, key=) 
