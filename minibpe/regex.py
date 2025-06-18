@@ -44,4 +44,4 @@ class RegexTokenizer(Tokenizer):
         
         # iteratively merge the most common pairs to create new tokens 
         merges = {} # (int, int) -> int 
-        vocab = {idx: bytes([idx]) for idx in range(256)} # int -> bytes
+        vocab = {idx: bytes([idx]) for idx in range(256)} # int -> bytes 
