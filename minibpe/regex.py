@@ -75,4 +75,4 @@ class RegexTokenizer(Tokenizer):
         self.inverse_special_tokens = {v: k for k, v in special_tokens.items()} 
         
     def decode(self, ids):
-        # given ids (list of integers)
+        # given ids (list of integers), return Python string 
