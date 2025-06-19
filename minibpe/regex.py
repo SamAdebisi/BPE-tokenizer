@@ -118,3 +118,5 @@ class RegexTokenizer(Tokenizer):
             chunk_ids = self._encode_chunk(chunk_bytes) 
             ids.extend(chunk_ids) 
         return ids 
+    
+    def 
