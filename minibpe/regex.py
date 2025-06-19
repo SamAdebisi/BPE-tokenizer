@@ -72,5 +72,5 @@ class RegexTokenizer(Tokenizer):
         # special_tokens is a dictionary of str -> int 
         # example: {"<|endoftext|>": 100257}
         self.special_tokens = special_tokens 
-        self.inverse_special_tokens = {idx: special for special, idx in special_tokens.items()}
+        self.inverse_special_tokens = {v: k for k, v in special_tokens.items()}
 
