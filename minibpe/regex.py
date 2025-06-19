@@ -101,7 +101,7 @@ class RegexTokenizer(Tokenizer):
             # just the first pair in the list, arbitrarily
             # we can detect this terminating case by a membership check 
             if pair not in self.merges:
-                break # nothing else can be merged anymore
+                break # nothing else can be merged anymore 
             idx = self.merges[pair]
             ids = merge(ids, pair, idx)
         return ids 
