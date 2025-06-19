@@ -88,3 +88,4 @@ class RegexTokenizer(Tokenizer):
         text = text_bytes.decode("utf-8", errors="replace")
         return text 
     
+    
