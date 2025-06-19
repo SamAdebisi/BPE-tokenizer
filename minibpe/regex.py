@@ -119,4 +119,4 @@ class RegexTokenizer(Tokenizer):
             ids.extend(chunk_ids) 
         return ids 
     
-    def 
+    def encode(self, text, allowed_special="none_raise")
