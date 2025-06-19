@@ -91,3 +91,4 @@ class RegexTokenizer(Tokenizer):
     def _encode_chunk(self, text_bytes):
         # return the token ids 
         # let's begin... first, convert all bytes to integers in range 0...255 
+        ids = list(text_bytes)
