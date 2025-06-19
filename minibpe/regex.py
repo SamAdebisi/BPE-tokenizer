@@ -89,4 +89,5 @@ class RegexTokenizer(Tokenizer):
         return text 
     
     def _encode_chunk(self, text_bytes):
-        # return the token ids
+        # return the token ids 
+        # let's begin... 
