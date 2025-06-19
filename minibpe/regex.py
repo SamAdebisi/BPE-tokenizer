@@ -69,5 +69,5 @@ class RegexTokenizer(Tokenizer):
         self.vocab = vocab   # used in decode() 
         
     def register_special_tokens(self, special_tokens):
-        # special_tokens 
+        # special_tokens is a dictionary of str -> int 
         
