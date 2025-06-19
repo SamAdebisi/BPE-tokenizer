@@ -88,6 +88,3 @@ class RegexTokenizer(Tokenizer):
         text = text_bytes.decode("utf-8", errors="replace")
         return text 
     
-    def encode(self, text):
-        # given a string text, return the token ids 
-        pass 
