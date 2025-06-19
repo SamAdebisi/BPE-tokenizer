@@ -78,8 +78,8 @@ class RegexTokenizer(Tokenizer):
         # given ids (list of integers), return Python string 
         part_bytes = [] 
         for idx in ids:
-            if idx in self.inverse_special_tokens:
-                part_bytes.append(self.inverse_special_tokens[idx]) 
+            if idx in self.vocab:
+                part_bytes.append(self.vocab[idx]) 
             else:
                 part_bytes.append(self.vocab[idx]) 
         text = b"".join(part_bytes).decode("utf-8", errors="replace")
