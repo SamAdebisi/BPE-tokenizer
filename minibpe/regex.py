@@ -85,7 +85,7 @@ class RegexTokenizer(Tokenizer):
             else:
                 raise ValueError(f"Invalid token id: {idx}") 
         text_bytes = b"".join(part_bytes)
-        text 
+        text = text_bytes.decode("utf-8", errors="replace")
         return text 
     
     def encode(self, text):
