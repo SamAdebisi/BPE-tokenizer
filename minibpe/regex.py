@@ -76,4 +76,3 @@ class RegexTokenizer(Tokenizer):
         
     def decode(self, ids):
         
-
