@@ -80,6 +80,8 @@ class RegexTokenizer(Tokenizer):
         for idx in ids:
             if idx in self.vocab:
                 part_bytes.append(self.vocab[idx]) 
+            elif idx in self.inverse_special_tokens:
+                part_bytes.append(self.inverse_special_tokens[idx].encode("utf-8")) 
             else:
                 part_bytes.append(self.vocab[idx]) 
         text = b"".join(part_bytes).decode("utf-8", errors="replace")
