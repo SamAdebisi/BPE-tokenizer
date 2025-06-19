@@ -71,4 +71,4 @@ class RegexTokenizer(Tokenizer):
     def register_special_tokens(self, special_tokens):
         # special_tokens is a dictionary of str -> int 
         # example: {"<|endoftext|>": 100257}
-        
+        self.special_tokens = special_tokens 
