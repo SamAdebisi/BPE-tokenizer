@@ -114,3 +114,5 @@ class RegexTokenizer(Tokenizer):
         # all chunks of text are encoded separately, then results are joined  
         ids = []
         for chunk in text_chunks:
+            chunk_bytes = chunk.encode("utf-8")
+            chunk_ids = self._encode_chunk(chunk_bytes)
