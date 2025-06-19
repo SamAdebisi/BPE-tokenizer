@@ -111,3 +111,4 @@ class RegexTokenizer(Tokenizer):
         """Encoding that ignores any special tokens."""
         # split text into chunks of text by categories defined in regex pattern 
         text_chunks = re.findall(self.compiled_pattern, text) 
+        # all chunks of text are encoded separately, then results are joined 
