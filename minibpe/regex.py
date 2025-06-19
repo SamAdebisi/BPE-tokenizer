@@ -107,4 +107,5 @@ class RegexTokenizer(Tokenizer):
             ids = merge(ids, pair, idx)
         return ids 
     
-    
+    def encode_ordinary(self, text):
+        # given a string text, return the token ids
