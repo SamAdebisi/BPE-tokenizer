@@ -89,3 +89,4 @@ class RegexTokenizer(Tokenizer):
     
     def encode(self, text):
         # given a string text, return the token ids 
+        pass 
