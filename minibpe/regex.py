@@ -109,6 +109,4 @@ class RegexTokenizer(Tokenizer):
     
     def encode_ordinary(self, text):
         """Encoding that ignores any special tokens."""
-        # given a string text, return the token ids 
-        
         
