@@ -110,6 +110,4 @@ class RegexTokenizer(Tokenizer):
     def encode_ordinary(self, text):
         """Encoding that ignores any special tokens."""
         # split text into chunks of text by categories defined in regex pattern 
-        text_chunks = re.findall(self.compiled_pattern, text)
-
-        
+        text_chunks = re.findall(self.compiled_pattern, text) 
