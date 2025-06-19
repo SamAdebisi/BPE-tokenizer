@@ -73,4 +73,7 @@ class RegexTokenizer(Tokenizer):
         # example: {"<|endoftext|>": 100257}
         self.special_tokens = special_tokens 
         self.inverse_special_tokens = {v: k for k, v in special_tokens.items()} 
+        
+    def decode(self, ids):
+        
 
