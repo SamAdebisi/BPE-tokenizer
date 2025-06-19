@@ -88,4 +88,4 @@ class RegexTokenizer(Tokenizer):
         text = text_bytes.decode("utf-8", errors="replace")
         return text 
     
-    
+    def _encode_chunk(self, text_bytes):
