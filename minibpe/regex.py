@@ -83,7 +83,7 @@ class RegexTokenizer(Tokenizer):
             elif idx in self.inverse_special_tokens:
                 part_bytes.append(self.inverse_special_tokens[idx].encode("utf-8")) 
             else:
-                part_bytes.append(self.vocab[idx]) 
+                raise ValueError(f"Invalid token id: {idx}") 
         text = b"".join(part_bytes).decode("utf-8", errors="replace")
         return text 
     
