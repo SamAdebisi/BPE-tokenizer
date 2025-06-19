@@ -76,4 +76,4 @@ class RegexTokenizer(Tokenizer):
         
     def decode(self, ids):
         # given ids (list of integers), return Python string 
-        part_bytes = [] 
+        part_bytes = []
