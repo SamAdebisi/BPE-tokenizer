@@ -76,4 +76,14 @@ class RegexTokenizer(Tokenizer):
         
     def decode(self, ids):
         # given ids (list of integers), return Python string 
-        part_bytes = []
+        part_bytes = [] 
+        for idx in ids:
+            if idx in self.inverse_special_tokens:
+                part_bytes.append(self.inverse_special_tokens[idx]) 
+            else:
+                part_bytes.append(self.vocab[idx]) 
+        text = b"".join(part_bytes).decode("utf-8", errors="replace")
+        return text 
+    
+    def encode(self, text):
+        # given a string text, return the token ids 
