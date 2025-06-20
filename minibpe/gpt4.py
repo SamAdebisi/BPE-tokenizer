@@ -4,6 +4,11 @@
     the pretrained tokenizer from the `cl100k_base` tokenizer of tiktoken. 
 """
 
-import tiktoken´
+import tiktoken 
 from .regex import RegexTokenizer 
 
+
+def bpe(mergeable_ranks, token, max_rank):
+    # helper function used in get_gpt4_merges() to reconstruct the merge forest 
+    parts = []
+    pass 
