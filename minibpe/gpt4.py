@@ -13,3 +13,4 @@ def bpe(mergeable_ranks, token, max_rank):
     parts = [bytes([b]) for b in token]
     while True:  
         min_idx = None 
+        min_rank = max_rank + 1 
