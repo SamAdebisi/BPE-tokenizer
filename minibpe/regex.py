@@ -140,5 +140,4 @@ class RegexTokenizer(Tokenizer):
             special = {k: v for k, v in self.special_tokens.items() if k in allowed_special} 
         else:
             raise ValueError
-        
     
