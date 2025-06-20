@@ -112,4 +112,4 @@ class GPT4Tokenizer(RegexTokenizer):
         # in the exact same format as the base class would. 
         # simple run as: 
         # python -c "from minibpe import GPT4Tokenizer, GPT4Tokenizer().save_vocab('gpt4.vocab')"
-        
+        from .base import render_token
