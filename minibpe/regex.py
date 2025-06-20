@@ -152,4 +152,4 @@ class RegexTokenizer(Tokenizer):
         special_chunks = re.split(special_pattern, text)
         # now all the special characters are separated from the rest of the text 
         # all chunks of text are encoded separately, then results are joined 
-        
+        ids = [] 
