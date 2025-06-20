@@ -77,3 +77,6 @@ class GPT4Tokenizer(RegexTokenizer):
         self.inverse_special_tokens = {v: k for k, v in self.byte_shuffle.items()}
         # finally register the special tokens 
         self.register_special_tokens(GPT4_SPECIAL_TOKENS) 
+        
+    def _encode_chunk(self, text_bytes):
+        return super()._encode_chunk(text_bytes)
