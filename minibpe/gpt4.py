@@ -99,3 +99,4 @@ class GPT4Tokenizer(RegexTokenizer):
     # we'd have to change save/load of base to add support for byte_shuffle... 
     # alternatively, we could move byte_shuffle to base class, but that would mean 
     # that we're making ugly our beautiful Tokenizer just to support 
+    # the GPT-4 tokenizer and its weird historical quirks around byte_shuffle. 
