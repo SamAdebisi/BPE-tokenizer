@@ -102,4 +102,4 @@ class GPT4Tokenizer(RegexTokenizer):
     # the GPT-4 tokenizer and its weird historical quirks around byte_shuffle. 
     
     def save(self, file_prefix):
-        raise NotImplementedError
+        raise NotImplementedError("GPT4Tokenizer cannot be saved.")
