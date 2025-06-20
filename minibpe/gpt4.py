@@ -110,4 +110,4 @@ class GPT4Tokenizer(RegexTokenizer):
     def save_vocab(self, vocab_file):
         # just for visualization purposes let's output the GPT-4 tokens 
         # in the exact same format as the base class would. 
-        
+        # simple run as: 
