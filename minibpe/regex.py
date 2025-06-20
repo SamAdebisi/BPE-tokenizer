@@ -141,5 +141,6 @@ class RegexTokenizer(Tokenizer):
         else:
             raise ValueError(f"allowed_special={allowed_special} not understood")
         if not special: 
+            # shortcut: if no special tokens, just use the ordinary encoding 
             return self.encode_ordinary(text) 
     
