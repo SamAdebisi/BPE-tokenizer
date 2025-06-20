@@ -145,3 +145,4 @@ class RegexTokenizer(Tokenizer):
             return self.encode_ordinary(text) 
         # otherwise, we have to be careful with potential special tokens in text 
         # we handle special tokens by splitting the text 
+        # based on the occurrence of any exact match with any of the special tokens 
