@@ -120,4 +120,5 @@ class RegexTokenizer(Tokenizer):
         return ids 
     
     def encode(self, text, allowed_special="none_raise"): 
-        
+        pass 
+    
