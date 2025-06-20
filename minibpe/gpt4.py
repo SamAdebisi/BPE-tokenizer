@@ -76,3 +76,4 @@ class GPT4Tokenizer(RegexTokenizer):
         self.byte_shuffle = {i: mergeable_ranks[bytes([i])] for i in range(256)}
         self.inverse_special_tokens = {v: k for k, v in self.byte_shuffle.items()}
         # finally register the special tokens 
+        self.register_special_tokens(GPT4_SPECIAL_TOKENS) 
