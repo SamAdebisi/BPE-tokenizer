@@ -91,4 +91,4 @@ class GPT4Tokenizer(RegexTokenizer):
         text = text_bytes.decode("utf-8", errors="replace")
         return text 
     
-    
+    # this is a pretrained tokenizer, it is not intended to be trained 
