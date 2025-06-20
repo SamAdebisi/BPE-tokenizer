@@ -83,3 +83,6 @@ class GPT4Tokenizer(RegexTokenizer):
         text_bytes = bytes(self.byte_shuffle[b] for b in text_bytes)
         ids = super()._encode_chunk(text_bytes) 
         return ids 
+    
+    def decode(self, ids):
+        # we have
