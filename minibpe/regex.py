@@ -140,4 +140,6 @@ class RegexTokenizer(Tokenizer):
             special = {k: v for k, v in self.special_tokens.items() if k in allowed_special} 
         else:
             raise ValueError(f"allowed_special={allowed_special} not understood")
+        if not special: 
+            return self.encode_ordinary(text) 
     
