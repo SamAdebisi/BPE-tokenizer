@@ -129,5 +129,7 @@ class RegexTokenizer(Tokenizer):
         """ 
         # decode the user desire w.r.t. handling of special tokens 
         special = None 
+        if allowed_special == "all":
+            special = self.special_tokens 
         pass 
     
