@@ -35,4 +35,7 @@ def recover_merges(mergeable_ranks):
     merges = {} 
     for token, rank in mergeable_ranks.items():
         if len(token) == 1:
-            continue
+            continue # skip raw bytes 
+        pair = tuple(bpe(mergeable_ranks, token, rank))
+        merges[pair] = rank 
+    return merges
