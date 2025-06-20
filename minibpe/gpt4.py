@@ -114,3 +114,5 @@ class GPT4Tokenizer(RegexTokenizer):
         # python -c "from minibpe import GPT4Tokenizer, GPT4Tokenizer().save_vocab('gpt4.vocab')"
         from .base import render_token
         # build vocab being mindful of the byte shuffle 
+        vocab = {idx: bytes([idx]) for idx in range(256)}
+        for (p0, p1), idx in self.merges.items():
