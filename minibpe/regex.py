@@ -128,5 +128,6 @@ class RegexTokenizer(Tokenizer):
         any other behavior is either annoying, or a major footgun
         """ 
         # decode the user desire w.r.t. handling of special tokens 
+        special = None 
         pass 
     
