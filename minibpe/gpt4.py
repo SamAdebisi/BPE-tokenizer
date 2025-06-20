@@ -29,6 +29,6 @@ def recover_merges(mergeable_ranks):
     # the `merges` are already the byte sequences in their merged state. 
     # so we have to recover the original pairings. We can do this by doing a small 
     # BPE training run on all the tokens, in their order.
-     # also see https://github.com/openai/tiktoken/issues/60
+    # also see https://github.com/openai/tiktoken/issues/60
     # also see https://github.com/karpathy/minbpe/issues/11#issuecomment-1950805306 
     
