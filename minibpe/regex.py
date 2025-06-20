@@ -134,6 +134,6 @@ class RegexTokenizer(Tokenizer):
         elif allowed_special == "none":
             special = {} 
         elif allowed_special == "none_raise":
-            special = self.special
+            special = {}
         
     
