@@ -126,7 +126,6 @@ class RegexTokenizer(Tokenizer):
         if none_raise, then an error is raised if any special token is encountered in text
         this is the default tiktoken behavior right now as well
         any other behavior is either annoying, or a major footgun
-        
         """
         pass 
     
