@@ -85,4 +85,5 @@ class GPT4Tokenizer(RegexTokenizer):
         return ids 
     
     def decode(self, ids):
-        # we have
+        # we have to un-permute the bytes before we decode 
+        
