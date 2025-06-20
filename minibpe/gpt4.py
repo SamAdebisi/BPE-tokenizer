@@ -123,3 +123,5 @@ class GPT4Tokenizer(RegexTokenizer):
             for idx, token in vocab.items(): 
                 # note: many tokens may be partial utf-8 
                 s = render_token(token)
+                if idx in inverted_merges: 
+                    idx0, idx1 = inverted_merges[idx]
