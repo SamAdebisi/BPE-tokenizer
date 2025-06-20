@@ -150,3 +150,4 @@ class RegexTokenizer(Tokenizer):
         # makes it into a capturing group, so the special tokens will be included 
         special_pattern = "(" + "|".join(re.escape(k) for k in special) + ")" 
         special_chunks = re.split(special_pattern, text)
+        # now all the special characters are separated from the rest of the text 
