@@ -39,5 +39,8 @@ def recover_merges(mergeable_ranks):
         pair = tuple(bpe(mergeable_ranks, token, max_rank=rank))
         assert len(pair) == 2 
         # recover the integer ranks of the pair 
+        ix0 = mergeable_ranks[pair[0]]
+        ix1 = mergeable_ranks[pair[1]]
+        pair = (ix0, ix1)
         merges[pair] = rank 
     return merges
