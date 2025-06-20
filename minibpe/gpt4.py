@@ -71,4 +71,5 @@ class GPT4Tokenizer(RegexTokenizer):
         self.vocab = vocab 
         # now here is another tricky part. 
         # for some reason, the tokens corresponding to individual bytes 
-        # are permuted in a different order. 
+        # are permuted in a different order. This is completely non-sensical 
+        # and probably historical, but therefore we have to deal with it here. 
