@@ -136,5 +136,9 @@ class RegexTokenizer(Tokenizer):
         elif allowed_special == "none_raise":
             special = {} 
             assert all(token not in text for token in self.special_tokens)
+        elif isinstance(allowed_special, dict):
+            special = allowed_special 
+        else:
+            raise ValueError(f"Invalid
         
     
