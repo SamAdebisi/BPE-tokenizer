@@ -94,3 +94,6 @@ class GPT4Tokenizer(RegexTokenizer):
     # this is a pretrained tokenizer, it is not intended to be trained 
     def train(self, text, vocab_size, verbose=False):
         raise NotImplementedError 
+    
+    # save/load would require some thought. 
+    # we'd have to change save/load of base to add support for byte_shuffle... 
