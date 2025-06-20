@@ -131,5 +131,8 @@ class RegexTokenizer(Tokenizer):
         special = None 
         if allowed_special == "all":
             special = self.special_tokens 
+        elif allowed_special == "none":
+            pass 
+        elif allowed
         
     
