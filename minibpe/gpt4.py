@@ -66,3 +66,6 @@ class GPT4Tokenizer(RegexTokenizer):
         self.merges = recover_merges(mergeable_ranks)
         # reconstruct the vocab from the mergers 
         vocab = {idx: bytes([idx]) for idx in range(256)}
+        for (p0, p1), idx in self.merges.items():
+            vocab[idx] = vocab[p0] + vocab[p1]
+        self.vocab = vocab 
