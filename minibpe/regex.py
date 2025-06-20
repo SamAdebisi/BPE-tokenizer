@@ -131,5 +131,5 @@ class RegexTokenizer(Tokenizer):
         special = None 
         if allowed_special == "all":
             special = self.special_tokens 
-        pass 
+        
     
