@@ -120,3 +120,4 @@ class GPT4Tokenizer(RegexTokenizer):
         # now merge the shuffled bytes and write to file 
         inverted_merges = {idx: pair for pair, idx in self.merges.items()}
         with open(vocab_file, "w", encoding="utf-8") as f:
+            for idx, token in vocab.items():
