@@ -149,3 +149,4 @@ class RegexTokenizer(Tokenizer):
         # we can use re.split for this... note that surrounding the pattern with ()
         # makes it into a capturing group, so the special tokens will be included 
         special_pattern = "(" + "|".join(re.escape(k) for k in special) + ")" 
+        special_chunks = re.split(special_pattern, text)
