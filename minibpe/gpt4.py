@@ -103,3 +103,6 @@ class GPT4Tokenizer(RegexTokenizer):
     
     def save(self, file_prefix):
         raise NotImplementedError("GPT4Tokenizer cannot be saved.")
+    
+    def load(self, model_file):
+        raise NotImplementedError("GPT4Tokenizer cannot be loaded.")
