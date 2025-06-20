@@ -34,4 +34,5 @@ def recover_merges(mergeable_ranks):
     
     merges = {} 
     for token, rank in mergeable_ranks.items():
-        
+        if len(token) == 1:
+            continue
