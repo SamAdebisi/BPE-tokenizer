@@ -37,5 +37,6 @@ def recover_merges(mergeable_ranks):
         if len(token) == 1:
             continue # skip raw bytes 
         pair = tuple(bpe(mergeable_ranks, token, max_rank=rank))
+        assert len(pair) == 2 
         merges[pair] = rank 
     return merges
