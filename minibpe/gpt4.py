@@ -53,3 +53,8 @@ GPT4_SPECIAL_TOKENS = {
     '<|fim_suffix|>': 100260,
     '<|endofprompt|>': 100276
 }
+
+class GPT4Tokenizer(RegexTokenizer):
+    
+    def __init__():
+        
