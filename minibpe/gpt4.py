@@ -69,3 +69,4 @@ class GPT4Tokenizer(RegexTokenizer):
         for (p0, p1), idx in self.merges.items():
             vocab[idx] = vocab[p0] + vocab[p1]
         self.vocab = vocab 
+        # now here is another tricky part. 
