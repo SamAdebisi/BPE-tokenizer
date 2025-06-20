@@ -24,3 +24,7 @@ def bpe(mergeable_ranks, token, max_rank):
         assert min_idx is not None 
         parts = parts[:min_idx] + [parts[min_idx] + parts[min_idx + 1]] + parts[min_idx + 2:]
     return parts 
+
+def recover_merges(mergeable_ranks):
+    # the `merges` are already the byte sequences in their merged state. 
+    # so we have to recover the original pairings. We can do this by doing a small 
