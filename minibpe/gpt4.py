@@ -73,3 +73,4 @@ class GPT4Tokenizer(RegexTokenizer):
         # for some reason, the tokens corresponding to individual bytes 
         # are permuted in a different order. This is completely non-sensical 
         # and probably historical, but therefore we have to deal with it here. 
+        self.byte_shuffle = {}
