@@ -10,5 +10,6 @@ from .regex import RegexTokenizer
 
 def bpe(mergeable_ranks, token, max_rank):
     # helper function used in get_gpt4_merges() to reconstruct the merge forest 
-    parts = []
+    parts = [bytes([b]) for b in token]
+    
     pass 
