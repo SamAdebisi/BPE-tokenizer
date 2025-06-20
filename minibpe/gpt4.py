@@ -64,3 +64,4 @@ class GPT4Tokenizer(RegexTokenizer):
         mergeable_ranks = enc.mergeable_ranks 
         # the merges are those of gpt4, but we have to recover them 
         self.merges = recover_merges(mergeable_ranks)
+        # reconstruct the vocab from the mergers 
