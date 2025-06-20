@@ -21,4 +21,6 @@ def bpe(mergeable_ranks, token, max_rank):
                 min_rank = rank
         if min_rank is None or (min_rank is not None and min_rank >= max_rank): 
                 break 
-            
+        assert min_idx is not None 
+        parts = parts[:min_idx] + [parts[min_idx] + parts[min_idx + 1]] + parts[min_idx + 2:]
+    return parts 
