@@ -62,4 +62,5 @@ class GPT4Tokenizer(RegexTokenizer):
         # get the official tokenizer and its merges 
         enc = tiktoken.get_encoding("cl100k_base")
         mergeable_ranks = enc.mergeable_ranks 
+        # the merges are those of gpt4, but we have to recover them 
         merges = recover_merges(mergeable_ranks)
