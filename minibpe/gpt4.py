@@ -14,3 +14,5 @@ def bpe(mergeable_ranks, token, max_rank):
     while True:  
         min_idx = None 
         min_rank = None 
+        for i, pair in enumerate(zip(parts, parts[1:])): 
+            pass 
