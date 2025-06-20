@@ -147,3 +147,5 @@ class RegexTokenizer(Tokenizer):
         # we handle special tokens by splitting the text 
         # based on the occurrence of any exact match with any of the special tokens 
         # we can use re.split for this... note that surrounding the pattern with ()
+        # makes it into a capturing group, so the special tokens will be included 
+        special_pattern = "()"
