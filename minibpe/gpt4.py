@@ -125,3 +125,8 @@ class GPT4Tokenizer(RegexTokenizer):
                 s = render_token(token)
                 if idx in inverted_merges: 
                     idx0, idx1 = inverted_merges[idx]
+                    s0 = render_token(vocab[idx0])
+                    s1 = render_token(vocab[idx1])
+                    f.write(f"[{s0}] [{s1}] -> [{s}] {idx}\n")
+                else: 
+                    f.write(f"[{s}] {idx}\n")
