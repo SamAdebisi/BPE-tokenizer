@@ -57,4 +57,4 @@ GPT4_SPECIAL_TOKENS = {
 class GPT4Tokenizer(RegexTokenizer):
     
     def __init__():
-        
+        super().__init__(GPT4_SPLIT_PATTERN)
