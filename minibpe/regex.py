@@ -135,6 +135,6 @@ class RegexTokenizer(Tokenizer):
             special = {} 
         elif allowed_special == "none_raise":
             special = {} 
-            assert all(token not in self.special_tokens for token in self.special_tokens)
+            assert all(token not in text for token in self.special_tokens)
         
     
