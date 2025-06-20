@@ -155,4 +155,8 @@ class RegexTokenizer(Tokenizer):
         ids = [] 
         for part in special_chunks: 
             if part in special: 
+                # this is a special token, encode it separately as a special case 
+                ids.append(special[part]) 
+            else:
+                # this is an ordinary sequence, encode it normally 
                 
