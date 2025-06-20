@@ -144,4 +144,3 @@ class RegexTokenizer(Tokenizer):
             # shortcut: if no special tokens, just use the ordinary encoding 
             return self.encode_ordinary(text) 
         # otherwise, we have to be careful with potential special tokens in text 
-    
