@@ -70,4 +70,5 @@ class GPT4Tokenizer(RegexTokenizer):
             vocab[idx] = vocab[p0] + vocab[p1]
         self.vocab = vocab 
         # now here is another tricky part. 
-        # 
+        # for some reason, the tokens corresponding to individual bytes 
+        # are permuted in a different order. 
