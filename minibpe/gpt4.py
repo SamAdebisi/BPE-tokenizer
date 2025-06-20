@@ -108,4 +108,6 @@ class GPT4Tokenizer(RegexTokenizer):
         raise NotImplementedError("GPT4Tokenizer cannot be loaded.")
     
     def save_vocab(self, vocab_file):
+        # just for visualization purposes let's output the GPT-4 tokens 
+        # in the exact same format as the base class would. 
         
