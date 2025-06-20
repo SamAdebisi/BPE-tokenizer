@@ -60,3 +60,4 @@ class GPT4Tokenizer(RegexTokenizer):
     def __init__(self):
         super().__init__(pattern=GPT4_SPLIT_PATTERN)
         # get the official tokenizer and its merges 
+        enc = tiktoken.get_encoding("cl100k_base
