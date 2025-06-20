@@ -33,3 +33,5 @@ def recover_merges(mergeable_ranks):
     # also see https://github.com/karpathy/minbpe/issues/11#issuecomment-1950805306 
     
     merges = {} 
+    for token, rank in mergeable_ranks.items():
+        
