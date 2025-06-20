@@ -122,3 +122,4 @@ class GPT4Tokenizer(RegexTokenizer):
         with open(vocab_file, "w", encoding="utf-8") as f:
             for idx, token in vocab.items(): 
                 # note: many tokens may be partial utf-8 
+                s = render_token(token)
