@@ -58,4 +58,4 @@ class GPT4Tokenizer(RegexTokenizer):
     """Lightweight wrapper on RegexTokenizer that matches GPT-4's tokenizer."""
     
     def __init__(self):
-        super().__init__(GPT4_SPLIT_PATTERN)
+        super().__init__(pattern=GPT4_SPLIT_PATTERN)
