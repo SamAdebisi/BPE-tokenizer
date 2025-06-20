@@ -15,4 +15,7 @@ def bpe(mergeable_ranks, token, max_rank):
         min_idx = None 
         min_rank = None 
         for i, pair in enumerate(zip(parts[:-1], parts[1:])): 
-            rank = mergeable_ranks.get(pair[0] + pair)
+            rank = mergeable_ranks.get(pair[0] + pair[1]) 
+            if rank is not None and (min_rank is None or rank < min_rank): 
+                min_idx = i 
+                min_rank = rank
