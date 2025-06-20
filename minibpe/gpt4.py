@@ -81,4 +81,4 @@ class GPT4Tokenizer(RegexTokenizer):
     def _encode_chunk(self, text_bytes):
         # before we start processing bytes, we have to permute them 
         text_bytes = bytes(self.byte_shuffle[b] for b in text_bytes)
-        return super()._encode_chunk(text_bytes)
+        ids = super()._encode_chunk(text_bytes) 
