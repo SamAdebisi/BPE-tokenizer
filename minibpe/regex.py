@@ -134,6 +134,7 @@ class RegexTokenizer(Tokenizer):
         elif allowed_special == "none":
             special = {} 
         elif allowed_special == "none_raise":
-            special = {}
+            special = {} 
+            assert all(token not in self.special_tokens for token in self.special_tokens)
         
     
