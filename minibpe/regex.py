@@ -139,5 +139,5 @@ class RegexTokenizer(Tokenizer):
         elif isinstance(allowed_special, set):
             special = {k: v for k, v in self.special_tokens.items() if k in allowed_special} 
         else:
-            raise ValueError
+            raise ValueError(f"allowed_special={allowed_special} not understood")
     
