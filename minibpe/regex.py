@@ -154,3 +154,5 @@ class RegexTokenizer(Tokenizer):
         # all chunks of text are encoded separately, then results are joined 
         ids = [] 
         for part in special_chunks: 
+            if part in special: 
+                
