@@ -139,6 +139,6 @@ class RegexTokenizer(Tokenizer):
         elif isinstance(allowed_special, dict):
             special = allowed_special 
         else:
-            raise ValueError(f"Invalid
+            raise ValueError
         
     
