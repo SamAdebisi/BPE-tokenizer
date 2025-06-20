@@ -86,4 +86,4 @@ class GPT4Tokenizer(RegexTokenizer):
     
     def decode(self, ids):
         # we have to un-permute the bytes before we decode 
-        
+        text_bytes = b"".join(self.vocab[idx] for idx in ids
