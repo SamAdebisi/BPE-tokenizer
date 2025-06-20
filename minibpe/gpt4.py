@@ -93,4 +93,4 @@ class GPT4Tokenizer(RegexTokenizer):
     
     # this is a pretrained tokenizer, it is not intended to be trained 
     def train(self, text, vocab_size, verbose=False):
-        raise NotImplementedError
+        raise NotImplementedError 
