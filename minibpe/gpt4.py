@@ -111,3 +111,5 @@ class GPT4Tokenizer(RegexTokenizer):
         # just for visualization purposes let's output the GPT-4 tokens 
         # in the exact same format as the base class would. 
         # simple run as: 
+        # python -c "from minibpe import GPT4Tokenizer, GPT4Tokenizer().save_vocab('gpt4.vocab')"
+        
