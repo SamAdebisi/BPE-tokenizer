@@ -19,5 +19,6 @@ def bpe(mergeable_ranks, token, max_rank):
             if rank is not None and (min_rank is None or rank < min_rank): 
                 min_idx = i 
                 min_rank = rank
-        if min_rank is None or min_rank >= max_rank: 
-                break
+        if min_rank is None or (min_rank is not None and min_rank >= max_rank): 
+                break 
+            
