@@ -133,6 +133,7 @@ class RegexTokenizer(Tokenizer):
             special = self.special_tokens 
         elif allowed_special == "none":
             pass 
-        elif allowed
+        elif allowed_special == "none_raise":
+            special = self.special
         
     
