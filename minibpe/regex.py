@@ -153,3 +153,4 @@ class RegexTokenizer(Tokenizer):
         # now all the special characters are separated from the rest of the text 
         # all chunks of text are encoded separately, then results are joined 
         ids = [] 
+        for part in special_chunks: 
