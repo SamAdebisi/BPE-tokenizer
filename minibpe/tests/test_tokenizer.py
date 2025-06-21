@@ -64,3 +64,4 @@ to the water springs and ponds<|endofprompt|>
 # tests 
 
 # test encode/decode identity for a few different strings 
+@pytest.mark.parametrize("text", test_strings)
