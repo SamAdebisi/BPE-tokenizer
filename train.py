@@ -18,3 +18,4 @@ for TokenizerClass, name in zip([BasicsicTokenizer, GPT4Tokenizer, RegexTokenize
     # construct the Tokenizer object and kick off verbose training 
     tokenizer = TokenizerClass()
     tokenizer.train(text, vocab_size=512, verbose=True)
+    # writes two files in the models directory: name.model, and name.vocab 
