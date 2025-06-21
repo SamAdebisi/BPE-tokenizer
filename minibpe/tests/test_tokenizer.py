@@ -83,4 +83,3 @@ def test_gpt4_tiktoken_equality(text):
     gpt4_tokenizer_ids = tokenizer.encode(text)
     assert gpt4_tokenizer_ids == tiktoken_ids 
     
-    
