@@ -77,3 +77,8 @@ def test_encode_decode_identity(tokenizer_factory, text):
 @pytest.mark.parametrize("text", test_strings)
 def test_gpt4_tiktoken_equality(text):
     text = unpack(text) 
+    tokenizer = GPT4Tokenizer()
+    ids = tokenizer.encode(text)
+    enc = tiktoken.get_encoding("cl100k_base")
+    decoded = enc.decode(ids)
+    assert text == decoded
