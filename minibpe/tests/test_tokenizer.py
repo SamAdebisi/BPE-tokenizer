@@ -28,6 +28,6 @@ def unpack(text):
 special_string = """
 <|endoftext|>Hello world this is one document 
 <|endoftext|>And this is another document 
-<|endoftext|><|fim_prefix|>And this one has<|fim_suffix|> tokens.<|fim_middle|>
+<|endoftext|><|fim_prefix|>And this one has<|fim_suffix|> tokens.<|fim_middle|> FIM
 <|endoftext|>
 """
