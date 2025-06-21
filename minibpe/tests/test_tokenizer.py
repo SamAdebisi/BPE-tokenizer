@@ -28,5 +28,5 @@ def unpack(text):
 special_string = """
 <|endoftext|>
 <|endoftext|>
-
+<|endoftext|>
 """
