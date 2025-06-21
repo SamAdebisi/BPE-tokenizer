@@ -12,4 +12,7 @@ test_strings = [
     "", # empty string 
     "?", # single character 
     "hello world!!!? (안녕하세요!) lol123 😉", # fun small string 
+    "FILE:taylorswift.txt", # FILE: is handled as a special string in unpack()
 ]
+def unpack(text):
+    pass 
