@@ -22,6 +22,4 @@ def unpack(text):
         filename = os.path.join(dirname, text[5:])
         text = open(filename, "r", encoding="utf-8").read()
     return text 
-
-
-     
+ 
