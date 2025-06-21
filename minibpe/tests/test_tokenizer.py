@@ -21,5 +21,4 @@ def unpack(text):
         dirname = os.path.dirname(os.path.abspath(__file__))
         taylorswift_file = os.path.join(dirname, text[5:])
         contents = open(taylorswift_file, "r", encoding="utf-8").read()
-    return contents  
- 
+        return contents  
