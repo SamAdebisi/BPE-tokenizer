@@ -79,7 +79,7 @@ def test_gpt4_tiktoken_equality(text):
     text = unpack(text) 
     tokenizer = GPT4Tokenizer()
     enc = tiktoken.get_encoding("cl100k_base")
-    ids = enc.encode(text)
+    tiktoken_ids = enc.encode(text)
     decoded = tokenizer.decode(ids)
     assert text == decoded 
     
