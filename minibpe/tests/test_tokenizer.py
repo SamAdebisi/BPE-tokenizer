@@ -64,4 +64,6 @@ to the water springs and ponds<|endofprompt|>
 # tests 
 
 # test encode/decode identity for a few different strings 
-@pytest.mark.parametrize("text", test_strings)
+@pytest.mark.parametrize("tokenizer_factory", [BasicsicTokenizer, GPT4Tokenizer, RegexTokenizer])
+def test_encode_decode(tokenizer_factory):
+    tokenizer = tokenizer_factory()
