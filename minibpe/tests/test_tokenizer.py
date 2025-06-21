@@ -20,6 +20,6 @@ def unpack(text):
     if text.startswith("FILE:"):
         dirname = os.path.dirname(os.path.abspath(__file__))
         taylorswift_file = os.path.join(dirname, text[5:])
-        text = open(taylorswift_file, "r", encoding="utf-8").read()
-    return text 
+        contents = open(taylorswift_file, "r", encoding="utf-8").read()
+    return contents  
  
