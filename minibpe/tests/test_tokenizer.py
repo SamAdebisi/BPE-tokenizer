@@ -32,5 +32,6 @@ special_string = """
 <|endoftext|>Last document!!! 👋<|endofprompt|>
 """.strip()
 special_tokens = {
-    "<|endoftext|>": 10025
+    "<|endoftext|>": 10025,
+    
     }
