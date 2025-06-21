@@ -11,5 +11,5 @@ from minibpe import BasicsicTokenizer, GPT4Tokenizer, RegexTokenizer
 test_strings = [
     "", # empty string 
     "?", # single character 
-    "hello world!!!? (안녕하세요!) lol123 😉"
+    "hello world!!!? (안녕하세요!) lol123 😉", # fun small string 
 ]
