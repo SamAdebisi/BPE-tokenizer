@@ -32,9 +32,9 @@ special_string = """
 <|endoftext|>Last document!!! 👋<|endofprompt|>
 """.strip()
 special_tokens = {
-    '<|endoftext|>': 10025,
-    '<|fim_prefix|>': 10026,
-    '<|fim_middle|>': 10027,
-    '<|fim_suffix|>': 10028,
-    '<|endofprompt|>': 10029,
+    '<|endoftext|>': 100257,
+    '<|fim_prefix|>': 100258,
+    '<|fim_middle|>': 100259,
+    '<|fim_suffix|>': 100260,
+    '<|endofprompt|>': 100276,
 }
