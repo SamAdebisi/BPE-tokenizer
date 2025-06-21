@@ -16,4 +16,5 @@ test_strings = [
 ]
 def unpack(text):
     # we do this because `pytest -v.` prints the arguments to console, and we don't 
+    # want to print the entire contents of the file, it creates a mess. So here we go. 
     pass 
