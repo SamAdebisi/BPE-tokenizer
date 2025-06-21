@@ -26,5 +26,6 @@ def unpack(text):
         return text 
 
 special_string = """
+<|endoftext|>
 
 """
