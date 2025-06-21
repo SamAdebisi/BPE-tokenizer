@@ -75,5 +75,5 @@ def test_encode_decode_identity(tokenizer_factory, text):
     
 # test that our tokenizer matches the official GPT-4 tokenizer 
 @pytest.mark.parametrize("text", test_strings)
-def test_gpt4_tokenizer(text):
-    pass 
+def test_gpt4_tiktoken_equality(text):
+    text = unpack(text) 
