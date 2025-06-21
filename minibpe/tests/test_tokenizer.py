@@ -24,3 +24,7 @@ def unpack(text):
         return contents  
     else:
         return text 
+
+special_string = """
+
+"""
