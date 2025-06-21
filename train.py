@@ -21,3 +21,5 @@ for TokenizerClass, name in zip([BasicsicTokenizer, GPT4Tokenizer, RegexTokenize
     # writes two files in the models directory: name.model, and name.vocab 
     prefix = os.path.join("models", name)
     tokenizer.save(prefix)
+t1 = time.time()
+
