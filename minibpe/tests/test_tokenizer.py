@@ -9,5 +9,7 @@ from minibpe import BasicsicTokenizer, GPT4Tokenizer, RegexTokenizer
 
 # a few strings to test the tokenizers on 
 test_strings = [
-    
+    "", # empty string 
+    "?", # single character 
+    "hello world!!!? (안녕하세요!) lol123 😉"
 ]
