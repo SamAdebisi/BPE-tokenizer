@@ -74,4 +74,6 @@ def test_encode_decode_identity(tokenizer_factory, text):
     assert text == decoded 
     
 # test that our tokenizer matches the official GPT-4 tokenizer 
-
+@pytest.mark.parametrize("text", test_strings)
+def test_gpt4_tokenizer(text):
+    pass 
