@@ -61,3 +61,6 @@ to the water springs and ponds<|endofprompt|>
 """.strip()
 
 # -------------------------------------------------------------------------------------
+# tests 
+
+# test encode/decode identity for a few different strings 
