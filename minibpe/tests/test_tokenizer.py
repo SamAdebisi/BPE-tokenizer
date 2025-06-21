@@ -19,7 +19,7 @@ def unpack(text):
     # want to print the entire contents of the file, it creates a mess. So here we go. 
     if text.startswith("FILE:"):
         dirname = os.path.dirname(os.path.abspath(__file__))
-        filename = os.path.join(dirname, text[5:])
-        text = open(filename, "r", encoding="utf-8").read()
+        taylorswift_file = os.path.join(dirname, text[5:])
+        text = open(taylorswift_file, "r", encoding="utf-8").read()
     return text 
  
