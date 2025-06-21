@@ -27,7 +27,7 @@ def unpack(text):
 
 special_string = """
 <|endoftext|>Hello world this is one document 
-<|endoftext|>
+<|endoftext|>And this is another document 
 <|endoftext|>
 <|endoftext|>
 """
