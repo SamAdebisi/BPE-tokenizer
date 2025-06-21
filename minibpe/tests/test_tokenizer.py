@@ -29,4 +29,5 @@ special_string = """
 <|endoftext|>
 <|endoftext|>
 <|endoftext|>
+<|endoftext|>
 """
