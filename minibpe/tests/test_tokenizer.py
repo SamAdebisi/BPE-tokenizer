@@ -78,6 +78,11 @@ def test_encode_decode_identity(tokenizer_factory, text):
 def test_gpt4_tiktoken_equality(text):
     text = unpack(text) 
     tokenizer = GPT4Tokenizer()
+    enc = tiktoken.get_encoding("cl100k_base")
+    ids = enc.encode(text)
+    decoded = tokenizer.decode(ids)
+    assert text == decoded 
+    
     ids = tokenizer.encode(text)
     enc = tiktoken.get_encoding("cl100k_base")
     decoded = enc.decode(ids)
