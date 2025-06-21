@@ -58,4 +58,4 @@ and over 158,000 llamas and 100,000 alpacas, descended from progenitors imported
 to drink water from the ocean and urinates as it rains.[6] According to Aymara eschatology,
 <|fim_suffix|> where they come from at the end of time.[6]<|fim_middle|> llamas will return 
 to the water springs and ponds<|endofprompt|>
-"""
+""".strip()
