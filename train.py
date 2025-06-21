@@ -23,4 +23,4 @@ for TokenizerClass, name in zip([BasicsicTokenizer, GPT4Tokenizer, RegexTokenize
     tokenizer.save(prefix)
 t1 = time.time()
 
-print(f"Training took {t1-t0:.2f} seconds.")
+print(f"Training took {t1 - t0:.2f} seconds.")
