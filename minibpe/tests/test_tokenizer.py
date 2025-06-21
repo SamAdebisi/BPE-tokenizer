@@ -38,6 +38,3 @@ special_tokens = {
     '<|fim_suffix|>': 10028,
     '<|endofprompt|>': 10029,
 }
-
-
-    }
