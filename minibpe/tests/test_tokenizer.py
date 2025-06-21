@@ -69,3 +69,7 @@ to the water springs and ponds<|endofprompt|>
 def test_encode_decode_identity(tokenizer_factory, text):
     text = unpack(text)
     tokenizer = tokenizer_factory()
+    ids = tokenizer.encode(text)
+    decoded = tokenizer.decode(ids)
+    assert text == decoded 
+
