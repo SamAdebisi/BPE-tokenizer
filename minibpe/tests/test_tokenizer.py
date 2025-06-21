@@ -30,4 +30,6 @@ special_string = """
 <|endoftext|>And this is another document 
 <|endoftext|><|fim_prefix|>And this one has<|fim_suffix|> tokens.<|fim_middle|> FIM
 <|endoftext|>Last document!!! 👋<|endofprompt|>
-"""
+""".strip()
+special_tokens = {
+    "<|endoftext|>": 10025}
