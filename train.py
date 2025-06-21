@@ -13,4 +13,4 @@ text = open("tests/taylorswift.txt", "r", encoding="utf-8").read()
 os.makedirs("models", exist_ok=True)
 
 t0 = time.time()
-for TokenizerClass, name 
+for TokenizerClass, name in zip
