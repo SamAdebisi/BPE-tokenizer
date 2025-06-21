@@ -72,4 +72,6 @@ def test_encode_decode_identity(tokenizer_factory, text):
     ids = tokenizer.encode(text)
     decoded = tokenizer.decode(ids)
     assert text == decoded 
+    
+# test that our tokenizer matches the official GPT-4 tokenizer 
 
