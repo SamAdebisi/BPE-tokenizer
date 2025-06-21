@@ -33,5 +33,11 @@ special_string = """
 """.strip()
 special_tokens = {
     '<|endoftext|>': 10025,
-    
+    '<|fim_prefix|>': 10026,
+    '<|fim_middle|>': 10027,
+    '<|fim_suffix|>': 10028,
+    '<|endofprompt|>': 10029,
+}
+
+
     }
