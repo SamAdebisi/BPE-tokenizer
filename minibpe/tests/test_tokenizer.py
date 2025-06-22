@@ -140,4 +140,4 @@ def test_save_load(special_tokens):
     tokenizer.load("test_tokenizer_tmp.model")
     # verify that decode(encode(x)) == x 
     assert tokenizer.decode(ids) == text 
-    
+    assert tokenizer.decode(tokenizer.encode(text, "all")) == text 
