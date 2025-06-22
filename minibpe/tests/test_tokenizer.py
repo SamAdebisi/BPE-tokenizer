@@ -7,7 +7,7 @@ from ..gpt4 import GPT4Tokenizer
 from ..regex import RegexTokenizer 
 
 
-from minibpe import BasicTokenizer, GPT4Tokenizer, RegexTokenizer 
+# from minibpe import BasicTokenizer, GPT4Tokenizer, RegexTokenizer 
 
 # -------------------------------------------------------------------------------
 # common test data 
