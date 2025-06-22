@@ -120,4 +120,4 @@ def test_wikipedia_example(tokenizer_factory):
     ids = tokenizer.encode(text)
     assert ids == [258, 100, 258, 97, 99]
     assert tokenizer.decode(tokenizer.encode(text)) == text 
-    
+
