@@ -114,4 +114,8 @@ def test_wikipedia_example(tokenizer_factory):
     
     So we expect the output list of ids to be [258, 100, 258, 97, 99]
     """
-    pass 
+    tokenizer = tokenizer_factory()
+    text = "aaabdaaabac"
+    ids = tokenizer.encode(text)
+    assert ids == [258, 100, 258, 97, 99]
+    
