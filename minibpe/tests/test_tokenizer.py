@@ -130,6 +130,6 @@ def test_save_load(special_tokens):
     tokenizer.train(text, 256 + 64)
     tokenizer.register_special_tokens(special_tokens)
     # verify that decode(encode(x)) == x 
-    assert tokenizer.decode(tokenizer.encode(text)) == text 
+    assert tokenizer.decode(tokenizer.encode(text, "all")) == text 
     # verify that save/load work as expected 
-    
+    ids = tokenizer.encode(text, "all")
