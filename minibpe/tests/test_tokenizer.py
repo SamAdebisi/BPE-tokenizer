@@ -141,3 +141,5 @@ def test_save_load(special_tokens):
     # verify that decode(encode(x)) == x 
     assert tokenizer.decode(ids) == text 
     assert tokenizer.decode(tokenizer.encode(text, "all")) == text 
+    assert tokenizer.encode(text, "all") == ids 
+    # delete the temporary files 
