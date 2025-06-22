@@ -138,3 +138,4 @@ def test_save_load(special_tokens):
     # re-load the tokenizer 
     tokenizer = RegexTokenizer()
     tokenizer.load("test_tokenizer_tmp.model")
+    assert tokenizer.decode(ids) == text
