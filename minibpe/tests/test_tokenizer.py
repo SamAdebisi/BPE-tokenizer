@@ -86,7 +86,6 @@ def test_gpt4_tiktoken_equality(text):
 # test the handling of special tokens 
 def test_gpt4_tiktoken_equality_special_tokens():
     tokenizer = GPT4Tokenizer()
-    tokenizer.register_special_tokens(special_tokens)
     enc = tiktoken.get_encoding("cl100k_base")
     tiktoken_ids = enc.encode(special_string)
     gpt4_tokenizer_ids = tokenizer.encode(special_string)
