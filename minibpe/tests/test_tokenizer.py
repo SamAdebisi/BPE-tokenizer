@@ -91,3 +91,4 @@ def test_gpt4_tiktoken_equality_special_tokens():
     gpt4_tokenizer_ids = tokenizer.encode(special_string, allowed_special="all")
     assert gpt4_tokenizer_ids == tiktoken_ids 
 
+# reference test to add more tests in the future 
