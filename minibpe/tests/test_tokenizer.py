@@ -143,3 +143,8 @@ def test_save_load(special_tokens):
     assert tokenizer.decode(tokenizer.encode(text, "all")) == text 
     assert tokenizer.encode(text, "all") == ids 
     # delete the temporary files 
+    for file in ["test_tokenizer_tmp.model", "test_tokenizer_tmp.vocab"]:
+        try:
+            os.remove(file)
+        except FileNotFoundError:
+            pass 
