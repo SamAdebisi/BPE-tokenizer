@@ -135,3 +135,4 @@ def test_save_load(special_tokens):
     ids = tokenizer.encode(text, "all")
     # save the tokenizer (TODO use a proper temporary directory)
     tokenizer.save("test_tokenizer_tmp")
+    # re-load the tokenizer 
