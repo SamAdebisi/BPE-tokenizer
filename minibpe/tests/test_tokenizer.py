@@ -95,5 +95,6 @@ def test_gpt4_tiktoken_equality_special_tokens():
 @pytest.mark.parametrize("tokenizer_factory", [BasicTokenizer, GPT4Tokenizer, RegexTokenizer])
 def test_wikipedia_example(tokenizer_factory):
     """
+    Quick unit test, 
     """
     pass 
