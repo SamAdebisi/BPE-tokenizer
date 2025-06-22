@@ -122,3 +122,6 @@ def test_wikipedia_example(tokenizer_factory):
     assert tokenizer.decode(tokenizer.encode(text)) == text 
 
 @pytest.mark.parametrize("special_tokens", [{}, special_tokens])
+def test_save_load(special_tokens):
+    tokenizer = GPT4Tokenizer()
+    tokenizer.register_special_tokens(special_tokens)
