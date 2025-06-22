@@ -149,3 +149,6 @@ def test_save_load(special_tokens):
         except FileNotFoundError:
             pass 
         
+if __name__ == "__main__":
+    pytest.main()
+    
