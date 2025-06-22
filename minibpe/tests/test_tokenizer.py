@@ -112,5 +112,7 @@ def test_wikipedia_example(tokenizer_factory):
     Keep in mind that for us a=97, b=98, c=99, d=100 (ASCII values)
     so Z will be 256, Y will be 257, and X will be 258. 
     
+    So we expect the output list of ids to be [258, 100, 258, 97, 99]
+    
     """
     pass 
