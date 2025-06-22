@@ -126,5 +126,6 @@ def test_save_load(special_tokens):
     # take a bit more complex piece of text and train the tokenizer, chosen at random 
     text = llama_test 
     # create a Tokenizer and do 64 merges 
-    tokenizer = GPT4Tokenizer()
+    tokenizer = RegexTokenizer()
+    tokenizer.train(text, 256 + 64)
     tokenizer.register_special_tokens(special_tokens)
