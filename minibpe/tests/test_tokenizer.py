@@ -96,5 +96,6 @@ def test_gpt4_tiktoken_equality_special_tokens():
 def test_wikipedia_example(tokenizer_factory):
     """
     Quick unit test, following along the Wikipedia example: 
+    https://en.wikipedia.org/wiki/Byte_pair_encoding 
     """
     pass 
