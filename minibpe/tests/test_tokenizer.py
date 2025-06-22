@@ -92,3 +92,4 @@ def test_gpt4_tiktoken_equality_special_tokens():
     assert gpt4_tokenizer_ids == tiktoken_ids 
 
 # reference test to add more tests in the future 
+@pytest.mark.parametrize()
