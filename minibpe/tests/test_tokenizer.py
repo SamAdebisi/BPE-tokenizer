@@ -3,6 +3,9 @@ import tiktoken
 import os 
 
 from ..basic import BasicTokenizer 
+from ..gpt4 import GPT4Tokenizer 
+from ..regex import RegexTokenizer 
+
 
 from minibpe import BasicTokenizer, GPT4Tokenizer, RegexTokenizer 
 
