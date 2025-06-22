@@ -4,7 +4,7 @@ The whole thing runs in ~15 seconds on my laptop.
 
 import os 
 import time 
-from minibpe import BasicTokenizer, GPT4Tokenizer, RegexTokenizer 
+from .minibpe import BasicTokenizer, GPT4Tokenizer, RegexTokenizer 
 
 # open some text and train a vocab of 512 tokens 
 text = open("minibpe/tests/taylorswift.txt", "r", encoding="utf-8").read()
