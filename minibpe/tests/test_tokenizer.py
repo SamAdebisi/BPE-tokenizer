@@ -2,6 +2,8 @@ import pytest
 import tiktoken 
 import os 
 
+from ..basic import BasicTokenizer 
+
 from minibpe import BasicTokenizer, GPT4Tokenizer, RegexTokenizer 
 
 # -------------------------------------------------------------------------------
