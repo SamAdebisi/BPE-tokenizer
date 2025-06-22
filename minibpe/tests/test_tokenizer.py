@@ -123,5 +123,7 @@ def test_wikipedia_example(tokenizer_factory):
 
 @pytest.mark.parametrize("special_tokens", [{}, special_tokens])
 def test_save_load(special_tokens):
+    # take a bit more complex piece of text and train the tokenizer, chosen at random 
+    text = llama_test 
     tokenizer = GPT4Tokenizer()
     tokenizer.register_special_tokens(special_tokens)
