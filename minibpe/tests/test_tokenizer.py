@@ -3,7 +3,7 @@ import tiktoken
 import os 
 
 from ..basic import BasicTokenizer 
-# from ..gpt4 import GPT4Tokenizer 
+from ..gpt4 import GPT4Tokenizer 
 from ..regex import RegexTokenizer 
 
 
@@ -69,7 +69,7 @@ to the water springs and ponds<|endofprompt|>
 # tests 
 
 # test encode/decode identity for a few different strings 
-@pytest.mark.parametrize("tokenizer_factory", [BasicTokenizer, RegexTokenizer])
+@pytest.mark.parametrize("tokenizer_factory", [BasicTokenizer, GPT4Tokenizer, RegexTokenizer])
 @pytest.mark.parametrize("text", test_strings)
 def test_encode_decode_identity(tokenizer_factory, text):
     text = unpack(text)
