@@ -61,7 +61,7 @@ class GPT4Tokenizer(RegexTokenizer):
         super().__init__(pattern=GPT4_SPLIT_PATTERN)
         # get the official tokenizer and its merges 
         enc = tiktoken.get_encoding("cl100k_base")
-        mergeable_ranks = enc.mergeable_ranks 
+        mergeable_ranks = enc._mergeable_ranks 
         # the merges are those of gpt4, but we have to recover them 
         self.merges = recover_merges(mergeable_ranks)
         # reconstruct the vocab from the mergers 
