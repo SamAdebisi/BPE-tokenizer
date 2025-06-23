@@ -119,7 +119,6 @@ def test_wikipedia_example(tokenizer_factory):
     
     So we expect the output list of ids to be [258, 100, 258, 97, 99]
     """
-    
     tokenizer = tokenizer_factory()
     text = "aaabdaaabac"
     tokenizer.train(text, 256 + 3)
