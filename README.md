@@ -12,6 +12,7 @@ Inspired by the practices in [GPT-2](https://github.com/openai/gpt-2) and later 
 
 ---
 
+```
 minibpe/
 │
 ├── minibpe/
@@ -27,7 +28,7 @@ minibpe/
 ├── train.py              # Optional script for training and saving tokenizers
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
